@@ -1,0 +1,11 @@
+/*info section style*/
+.info {
+    background-color: #eaf7f2 !important;
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+.info h4 {
+    font-family: 'Pacifico', cursive;
+    color: #000;
+}
+/*info section style*/

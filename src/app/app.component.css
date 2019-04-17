@@ -1,0 +1,23 @@
+/*navigation menu*/
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    background-color: #ff896b;
+    color: #2c2727 !important;
+}
+.navbar-brand {
+    font-size: 1.3rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-item:last-child {
+    padding-right: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-dark {
+    background: rgba(0,0,0,0.65) !important;
+}
+/*navigation menu*/
