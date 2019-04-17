@@ -1,0 +1,17 @@
+/*header style*/
+header {
+    margin-top: 56px;
+}
+header .header-bg {
+    background: url('assets/images/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:8em 0 16rem;
+}
+header .header-bg .cart-h1 {
+    font-size: 6rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+/*header style*/

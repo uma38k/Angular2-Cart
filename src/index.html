@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularCartProject</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <app-root></app-root>
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">NS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-cart-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <header-template></header-template>
+  <!-- Header -->
+  <!--<header>
+    <div class="container-fluid header-bg">
+      <h1 class="cart-h1 text-center">Nature Shop</h1>
+    </div>
+  </header>-->
+  <!-- Header -->
+
+  <!-- Search -->
+  <section class="container-fluid">
+    <div class="row search">
+      <div class="col-md-9">
+          <div class="form-inline">
+            <input type="email" class="form-control" id="email">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <p class="">Cart Total = Rs. 670</p>
+          <p class="">Cart Items = 3</p>
+      </div>
+    </div>
+  </section>
+  <!-- Search -->
+
+  <!-- Item List -->
+  <section class="container-fluid py-5">
+    <div class="row all-items">
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/1-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Aquiesse Pink</h4>
+            <p class="card-item-price">Rs. 120</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/3-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Rock Arden</h4>
+            <p class="card-item-price">Rs. 420</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/5-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Golden Heels</h4>
+            <p class="card-item-price">Rs. 280</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/7-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Havells Red</h4>
+            <p class="card-item-price">Rs. 190</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/9-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Golden Heels</h4>
+            <p class="card-item-price">Rs. 280</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/11-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Havells Red</h4>
+            <p class="card-item-price">Rs. 190</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/13-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Aquiesse Pink</h4>
+            <p class="card-item-price">Rs. 120</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/15-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Rock Arden</h4>
+            <p class="card-item-price">Rs. 420</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/17-thegem-portfolio-masonry-754-968.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Golden Heels</h4>
+            <p class="card-item-price">Rs. 280</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/19-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Havells Red</h4>
+            <p class="card-item-price">Rs. 190</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/21-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Golden Heels</h4>
+            <p class="card-item-price">Rs. 280</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2 item-block">
+        <div class="card">
+          <img class="items-img" src="assets/images/23_1-thegem-portfolio-masonry.jpg">
+          <div class="card-body">
+            <i class="fa fa-cart-plus"></i>
+            <h4 class="card-title">Havells Red</h4>
+            <p class="card-item-price">Rs. 190</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Item List -->
+
+  <!-- Company -->
+  <section class="container-fluid">
+    <div class="row info text-center">
+      <div class="container">
+          <img class="comp-img" src="assets/images/comp-1.webp" />
+          <img class="comp-img" src="assets/images/comp-2.webp" />
+          <img class="comp-img" src="assets/images/comp-3.webp" />
+          <img class="comp-img" src="assets/images/comp-4.webp" />
+          <img class="comp-img" src="assets/images/comp-5.webp" />
+          <img class="comp-img" src="assets/images/comp-6.webp" />
+      </div>
+    </div>
+  </section>
+  <!-- Company -->
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

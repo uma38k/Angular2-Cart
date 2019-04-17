@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {font-family: 'Assistant', sans-serif;}
+p {margin-bottom:0}
+/*font-family: 'Montserrat', sans-serif;*/
+
+/*navigation menu*/
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    background-color: #ff896b;
+    color: #2c2727 !important;
+}
+.navbar-brand {
+    font-size: 1.3rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+.nav-item {
+    padding: 0 10px;
+}
+.nav-item:last-child {
+    padding-right: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-dark {
+    background: rgba(0,0,0,0.65) !important;
+}
+/*navigation menu*/
+
+/*header style*/
+header {
+    margin-top: 56px;
+}
+header .header-bg {
+    background: url('assets/images/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:8em 0 16rem;
+}
+header .header-bg .cart-h1 {
+    font-size: 6rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+/*header style*/
+
+/*items styles*/
+.all-items .item-block {
+    margin-bottom: 30px;
+}
+.all-items .items-img {
+    width: 100%;
+    cursor: pointer;
+}
+.card-body {
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding-bottom: 2rem;
+}
+.card-body i.fa {
+    cursor: pointer;
+    position: absolute;
+    color: red;
+    font-size: 1rem
+}
+.card-body i.fa.fa-cart-plus {
+    right:20px;
+    bottom:15px;
+}
+.all-items .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.all-items .card-item-price {
+    font-size: 1rem;
+}
+
+/*items styles*/
+
+/*info section style*/
+.info {
+    background-color: #eaf7f2 !important;
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+/*info section style*/
+
+/*search section style*/
+.search {
+    background-color: #eaf7f2 !important;
+    padding: 2rem 0;
+}
+.search .btn {
+    margin-left: 10px;
+    background-color: #ff896b;
+}
+.search p {
+    font-size: .8rem;
+}
+/*search section style*/
+
