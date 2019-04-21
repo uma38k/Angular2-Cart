@@ -1,10 +1,24 @@
 import { Component } from '@angular/core';
+import { AngularServices } from './angular-services';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [AngularServices]
 })
+
 export class AppComponent {
-  home = 'NS';
+  home: string = 'NS';
+  title: string;
+  constructor(private _angularService: AngularServices) {
+
+  }
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.title = this._angularService.printMsg()
+  }
+
 }
