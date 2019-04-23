@@ -1,0 +1,12 @@
+ <!-- Company -->
+ <section class="container-fluid">
+  <div class="row info text-center">
+    <div class="container">
+        <h4 class="text-center">{{company}}</h4>
+        <img *ngFor="let element of array" class="comp-img"  [src]="element.src" />
+    </div>
+  </div>
+</section>
+<!-- Company -->
+
+<router-outlet></router-outlet>
