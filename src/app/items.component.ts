@@ -12,7 +12,12 @@ export class ItemComponent {
   cart_btn = 'Check Cart';
   item_title = 'Exclusive for you';
   cart_value: string;
+  no_of_item: number = 1;
   
+  showCounter: boolean = false;
+  pid: string
+  pname: string;
+  pprice: number;
   product_id: string
   product_name: string;
   product_price: number;
@@ -46,6 +51,7 @@ export class ItemComponent {
   c_item: number = 0;
 
   public addToCart(event, pd_id, pd_name, pd_price) {
+    
     alert('Product with ID ' + pd_id + ' is added to your cart.');
     this.cart.push(
       {
@@ -53,6 +59,9 @@ export class ItemComponent {
        "Product_Name":pd_name,
        "Product_Price":pd_price
       });
+
+    this.showCounter = true;
+    this.minusCart(event);
 
     this.cart_total_price = this.cart_total_price + pd_price;
     this.c_total = this.cart_total_price;
@@ -62,8 +71,15 @@ export class ItemComponent {
   
   }
   
-  /*public checkYourCart(event) {
-      
+  public minusCart(event) {
+    this.c_item = this.c_item - 1;
+    return this.c_item;
+  }
+
+ /* public addCart(event) {
+    this.c_item = this.c_item + 1;
+    this.no_of_item = this.c_item;
+    this.addToCart(event, this.pid, this.pname, this.pprice);
   }*/
 
   constructor(private _angularService: AngularServices) {
