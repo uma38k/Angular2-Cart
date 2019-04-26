@@ -24,6 +24,7 @@ export class ItemComponent {
   product_image: string;
   product_quantity: number;
 
+  
   productList = [
     {product_id: "PROD1001", product_name: "Aquiesse Pink", product_price: 120, product_image:"../assets/images/1-thegem-portfolio-masonry.jpg", product_quantity: 25},
     {product_id: "PROD1002", product_name: "Rock Arden", product_price: 240, product_image:"../assets/images/3-thegem-portfolio-masonry.jpg", product_quantity: 25},
