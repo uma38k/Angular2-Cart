@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-3">
         <p class="">Cart Total = Rs. {{c_total}}</p>
-        <p class="">Cart Items = {{c_item}}  {{cart_value}}</p>
+        <p class="">Cart Items = {{no_of_item}}  {{cart_value}}</p>
     </div>
     <div class="col-md-3">
         <button type="submit" class="btn" data-toggle="modal" data-target="#myModal">{{cart_btn}}</button>
@@ -66,19 +66,23 @@
               <td>{{i+1}}</td>
               <td>{{pd.Product_ID}}</td>
               <td>{{pd.Product_Name}}</td>
-              <td>1</td>
-              <td>{{pd.Product_Price}}</td>
+              <td>
+                <button class="inFormBtn" (click)="minusCart($event, element)">-</button>
+                <span class="inFormVale">{{c_item}}</span>
+                <button class="inFormBtn" (click)="addCart($event, element)">+</button>
+              </td>
+              <td>{{pd.Product_Price * c_item}}</td>
             </tr>
           </tbody>
-          <thead>
+          <!--<thead>
             <tr>
               <th>Total</th>
               <th></th>
               <th></th>
-              <th>{{c_item}}</th>
-              <th>{{c_total}}</th>
+              <th>{{totalItems}}</th>
+              <th>{{ c_total }}</th>
             </tr>
-          </thead>
+          </thead>-->
         </table>
       </div>
 
@@ -97,9 +101,15 @@
   <div class="itemCounterTable">
     <div class="itemCounterTableCell">
       <div class="mainConent">
+        <div class="">
+          <p>Product Quantity</p>
+        </div>
         <span class="btn-span minus" (click)="minusCart($event)">-</span>
-        <span class="noIfItem">{{no_of_item}}</span>
+        <span class="noIfItem">{{c_item}}</span>
         <span class="btn-span add" (click)="addCart($event)">+</span>
+        <div class="">
+          <button (click)="Ok($event)">Ok</button>
+        </div>
       </div>
     </div>
   </div>

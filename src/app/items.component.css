@@ -46,6 +46,18 @@
     font-family: 'Pacifico', cursive;
     background-color: #ff896b;
 }
+.inFormBtn {
+    font-family: 'Pacifico', cursive;
+    background-color: #ff896b;
+    height:30px;
+    width:30px;
+    cursor: pointer;
+}
+.inFormVale {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
 /*search section style*/
 
 /*Modal styles*/

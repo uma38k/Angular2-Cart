@@ -12,7 +12,7 @@ export class ItemComponent {
   cart_btn = 'Check Cart';
   item_title = 'Exclusive for you';
   cart_value: string;
-  no_of_item: number = 1;
+  no_of_item: number = 0;
   
   showCounter: boolean = false;
   pid: string
@@ -24,7 +24,7 @@ export class ItemComponent {
   product_image: string;
   product_quantity: number;
 
-  
+
   productList = [
     {product_id: "PROD1001", product_name: "Aquiesse Pink", product_price: 120, product_image:"../assets/images/1-thegem-portfolio-masonry.jpg", product_quantity: 25},
     {product_id: "PROD1002", product_name: "Rock Arden", product_price: 240, product_image:"../assets/images/3-thegem-portfolio-masonry.jpg", product_quantity: 25},
@@ -50,38 +50,46 @@ export class ItemComponent {
   cart_total_price: number = 0;
   c_total: number = 0;
   c_item: number = 0;
+  index: number;
+  cartItem: number;
+  totalItems: number;
 
   public addToCart(event, pd_id, pd_name, pd_price) {
-    
-    alert('Product with ID ' + pd_id + ' is added to your cart.');
-    this.cart.push(
-      {
-       "Product_ID":pd_id,
-       "Product_Name":pd_name,
-       "Product_Price":pd_price
-      });
-
-    this.showCounter = true;
-    this.minusCart(event);
+    this.no_of_item++;
+    this.c_item = 1;
+    //this.showCounter = true;
+    //this.minusCart(event);
 
     this.cart_total_price = this.cart_total_price + pd_price;
     this.c_total = this.cart_total_price;
-    this.c_item = this.c_item + 1;
-
-    console.log(this.cart);
-  
+    alert('Product with ID ' + pd_id + ' is added to your cart.');
+      this.cart.push(
+      {
+       "Product_ID":pd_id,
+       "Product_Name":pd_name,
+       "Product_Price":pd_price,
+       "Product_Quantity":1,
+      });
+      console.log(this.cart);
   }
   
-  public minusCart(event) {
+  public minusCart(_event: any, e) {
     this.c_item = this.c_item - 1;
-    return this.c_item;
+    console.log("Minus " + this.c_item);
+    //alert("minus"+this.c_item);
+    //return this.c_item;
   }
 
- /* public addCart(event) {
+  public addCart(_event: any, e) {
     this.c_item = this.c_item + 1;
-    this.no_of_item = this.c_item;
-    this.addToCart(event, this.pid, this.pname, this.pprice);
-  }*/
+    console.log("Add " + this.c_item);
+    //alert("add"+this.c_item);
+    //return this.c_item;
+  }
+
+  public Ok(_event: any) {
+    this.showCounter = false;
+  };
 
   constructor(private _angularService: AngularServices) {
 
